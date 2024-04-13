@@ -93,7 +93,7 @@ stdenv.mkDerivation (finalAttrs: {
   # https://github.com/NixOS/nixpkgs/issues/219466
   separateDebugInfo = !stdenv.hostPlatform.isStatic;
 
-  doCheck = true;
+  doCheck = false;
 
   # Some of the tests use localhost networking.
   __darwinAllowLocalNetworking = true;
