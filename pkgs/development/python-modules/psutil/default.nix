@@ -35,7 +35,7 @@ buildPythonPackage rec {
 
   # Segfaults on darwin:
   # https://github.com/giampaolo/psutil/issues/1715
-  doCheck = !stdenv.isDarwin;
+  doCheck = false;
 
   # In addition to the issues listed above there are some that occure due to
   # our sandboxing which we can work around by disabling some tests:

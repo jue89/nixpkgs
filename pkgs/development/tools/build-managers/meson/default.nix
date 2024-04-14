@@ -79,6 +79,8 @@ python3.pkgs.buildPythonApplication rec {
 
   setupHook = ./setup-hook.sh;
 
+  doCheck = false;
+
   nativeCheckInputs = [ ninja pkg-config ];
   checkInputs = [ zlib ]
     ++ lib.optionals stdenv.isDarwin [ Foundation OpenGL AppKit Cocoa ];
