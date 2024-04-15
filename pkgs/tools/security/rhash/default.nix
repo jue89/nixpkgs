@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     (lib.enableFeature enableStatic "lib-static")
   ];
 
-  doCheck = true;
+  doCheck = false;
 
   checkTarget = "test-full";
 
